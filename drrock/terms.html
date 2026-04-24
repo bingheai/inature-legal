@@ -6,261 +6,226 @@
     <title>DrRock - 用户协议</title>
     <style>
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, #0f766e 0%, #2563eb 55%, #38bdf8 100%);
-            min-height: 100vh;
-            padding: 20px;
-            color: #111827;
-            line-height: 1.6;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            color: #18342b;
+            background: #f5f8f4;
+            line-height: 1.75;
         }
 
-        .container {
-            max-width: 900px;
+        .page {
+            max-width: 860px;
             margin: 0 auto;
-            background: #fff;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(15, 23, 42, 0.18);
-            overflow: hidden;
+            padding: 48px 22px 56px;
         }
 
         header {
-            background: linear-gradient(135deg, #0f766e 0%, #2563eb 100%);
-            color: #fff;
-            padding: 50px 40px;
-            text-align: center;
+            padding: 38px 0 30px;
+            border-bottom: 1px solid rgba(18, 83, 65, 0.18);
+        }
+
+        .brand {
+            color: #125341;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 10px;
         }
 
         h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-            font-weight: 700;
+            margin: 0;
+            color: #0b3d2e;
+            font-size: 34px;
+            line-height: 1.2;
+            letter-spacing: 0;
         }
 
-        .last-updated {
+        .meta {
+            margin-top: 12px;
+            color: #5f746b;
             font-size: 14px;
-            opacity: 0.9;
-            font-weight: 300;
+        }
+
+        nav {
+            margin-top: 24px;
+        }
+
+        nav a {
+            color: #125341;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(18, 83, 65, 0.35);
         }
 
         main {
-            padding: 50px 40px;
+            padding-top: 34px;
         }
 
         section {
-            margin-bottom: 40px;
+            padding: 24px 0;
+            border-bottom: 1px solid rgba(18, 83, 65, 0.12);
+        }
+
+        section:last-child {
+            border-bottom: 0;
         }
 
         h2 {
-            font-size: 22px;
-            color: #0f766e;
-            margin-bottom: 15px;
-            margin-top: 30px;
-            border-bottom: 2px solid #2563eb;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            font-size: 16px;
-            color: #2563eb;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-weight: 600;
+            margin: 0 0 14px;
+            color: #0b3d2e;
+            font-size: 20px;
+            line-height: 1.35;
+            letter-spacing: 0;
         }
 
         p {
-            line-height: 1.8;
-            color: #4b5563;
-            margin-bottom: 15px;
+            margin: 0 0 14px;
+            color: #334d44;
             font-size: 15px;
         }
 
         ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
+            margin: 0 0 4px 20px;
+            padding: 0;
         }
 
         li {
-            margin-bottom: 10px;
-            color: #4b5563;
-            line-height: 1.7;
+            margin-bottom: 9px;
+            color: #334d44;
             font-size: 15px;
         }
 
         strong {
-            color: #0f766e;
-            font-weight: 600;
+            color: #0b3d2e;
+            font-weight: 700;
         }
 
-        .highlight-box {
-            background: linear-gradient(135deg, rgba(15, 118, 110, 0.06) 0%, rgba(37, 99, 235, 0.06) 100%);
-            border-left: 4px solid #2563eb;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-
-        a {
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        a:hover {
-            color: #0f766e;
-            text-decoration: underline;
+        .notice {
+            margin: 18px 0 4px;
+            padding: 16px 18px;
+            background: #e9f2ec;
+            border-left: 4px solid #125341;
+            color: #24453a;
         }
 
         footer {
-            background: #f3f4f6;
-            padding: 30px 40px;
-            text-align: center;
-            border-top: 1px solid #e5e7eb;
-            color: #6b7280;
-            font-size: 14px;
+            padding-top: 28px;
+            color: #6b7d75;
+            font-size: 13px;
         }
 
-        .nav {
-            text-align: right;
-            margin-bottom: 20px;
-        }
+        @media (max-width: 640px) {
+            .page {
+                padding: 28px 18px 42px;
+            }
 
-        .nav a {
-            margin-left: 15px;
-        }
-
-        @media (max-width: 768px) {
             header {
-                padding: 30px 20px;
+                padding-top: 22px;
             }
 
             h1 {
-                font-size: 24px;
+                font-size: 28px;
             }
 
             h2 {
                 font-size: 18px;
             }
-
-            main {
-                padding: 30px 20px;
-            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="page">
         <header>
-            <h1>DrRock 用户协议</h1>
-            <p class="last-updated">最后更新：2026年4月24日</p>
+            <div class="brand">DrRock</div>
+            <h1>用户协议</h1>
+            <div class="meta">最后更新：2026年4月24日</div>
+            <nav>
+                <a href="./privacy.html">查看隐私政策</a>
+            </nav>
         </header>
 
         <main>
-            <div class="nav">
-                <a href="./privacy.html">隐私政策</a>
-            </div>
-
             <section>
                 <h2>1. 协议接受</h2>
-                <p>欢迎使用 DrRock（以下简称“本应用”）。您下载、安装、访问或使用本应用，即表示您已阅读、理解并同意受本用户协议（以下简称“本协议”）约束。</p>
-                <p>如果您不同意本协议的任何内容，请立即停止使用本应用。</p>
+                <p>欢迎使用 DrRock。本应用用于识别石头、矿物和岩石特征，并提供相关资料参考。您下载、安装或使用本应用，即表示您同意本用户协议。</p>
+                <p>如您不同意本协议，请停止使用本应用。</p>
             </section>
 
             <section>
                 <h2>2. 服务内容</h2>
-                <p>DrRock 可能提供健康记录管理、医学资料整理、AI 辅助问答、内容总结、提醒、搜索、订阅或其他与健康信息管理相关的功能。具体功能以应用实际提供的内容为准。</p>
-                <p>我们可能根据产品规划、运营需要或法律法规要求，对服务内容进行新增、变更、暂停或终止。</p>
+                <p>DrRock 可能提供拍照识别、相册识别、识别结果展示、岩石或矿物资料、历史记录、收藏、备注、订阅或其他相关功能。具体功能以应用实际提供为准。</p>
+                <p>我们可能根据产品运营、技术调整或法律要求变更、暂停或终止部分功能。</p>
             </section>
 
             <section>
-                <h2>3. 使用许可</h2>
-                <p>在您遵守本协议的前提下，我们授予您一项有限的、非排他性的、不可转让的、可撤销的许可，允许您在个人设备上安装和使用本应用。</p>
-                <p>您不得：</p>
+                <h2>3. 使用规则</h2>
+                <p>在遵守本协议的前提下，您可以在个人设备上安装和使用 DrRock。您不得：</p>
                 <ul>
-                    <li>复制、修改、改编、翻译、出租、出售或分发本应用及其任何部分。</li>
-                    <li>对本应用进行反向工程、反编译、反汇编或尝试获取源代码。</li>
-                    <li>绕过、破坏或干扰本应用的安全、计费、访问控制或技术限制。</li>
-                    <li>使用本应用从事违法、侵权、欺诈、骚扰、滥用或损害他人权益的活动。</li>
-                    <li>以自动化方式大量访问、抓取、复制或训练模型，除非获得我们明确书面许可。</li>
+                    <li>复制、修改、出售、出租、分发或以其他方式商业利用本应用。</li>
+                    <li>反向工程、反编译、破解或绕过本应用的技术限制。</li>
+                    <li>上传违法、侵权、恶意代码、无关敏感信息或侵犯他人隐私的内容。</li>
+                    <li>使用自动化工具大量访问、抓取、复制或干扰本应用服务。</li>
+                    <li>将识别结果用于违法交易、欺诈宣传或误导他人的商业活动。</li>
                 </ul>
             </section>
 
             <section>
-                <h2>4. 账户与安全</h2>
-                <p>部分功能可能需要注册或登录账户。您应提供真实、准确、完整并及时更新的信息，妥善保管账户和密码，并对您账户下发生的活动负责。</p>
-                <p>如您发现账户存在未经授权使用或安全风险，应及时通过应用内反馈渠道或开发者公开联系方式通知我们。</p>
+                <h2>4. 图片和用户内容</h2>
+                <p>您应确保对上传、拍摄或保存的图片和文字内容拥有合法权利。您仍保留对用户内容的合法权益。</p>
+                <p>为提供识别、保存记录、同步、故障排查和服务改进，我们可在必要范围内处理您提交的图片、识别结果、备注和反馈内容。</p>
             </section>
 
             <section>
-                <h2>5. 用户内容</h2>
-                <p>您对在本应用中输入、上传、保存或生成的内容依法享有相应权利，并应确保您拥有处理相关内容所需的权利或授权。</p>
-                <p>为向您提供服务，您授予我们在必要范围内存储、处理、展示、传输和备份用户内容的许可。该许可仅用于提供、维护、改进本应用以及履行法律义务。</p>
-                <p>您不得上传或提交违法、侵权、虚假、恶意代码、侵犯隐私或未经授权的个人敏感信息。</p>
-            </section>
-
-            <section>
-                <h2>6. 医疗免责声明</h2>
-                <div class="highlight-box">
-                    <p><strong>重要提示：</strong>DrRock 提供的内容和 AI 输出仅用于健康信息管理、资料整理和一般参考，不构成医学诊断、治疗建议、处方意见或医疗服务。</p>
+                <h2>5. 识别结果说明</h2>
+                <div class="notice">
+                    DrRock 的识别结果仅供学习、探索和一般参考，不保证完全准确、完整或适用于所有场景。
                 </div>
-                <p>您应向具备资质的医生、药师或其他医疗专业人士咨询具体疾病、诊断、治疗、用药和急救问题。对于紧急医疗情况，请立即联系当地急救服务或前往医疗机构。</p>
-                <p>您理解并同意，AI 或自动化功能可能存在不准确、不完整、过时或不适用于您个人情况的内容，您不应仅依据本应用输出作出医疗决定。</p>
+                <p>岩石和矿物识别可能受到图片质量、光线、角度、样本磨损、环境附着物、数据库覆盖范围等因素影响。对于收藏、交易、鉴定、科研、工程、安全或法律用途，请以专业机构或具备资质的专家鉴定为准。</p>
             </section>
 
             <section>
-                <h2>7. 订阅、购买与退款</h2>
-                <p>本应用可能提供付费订阅、一次性购买或其他增值服务。具体价格、权益、自动续订规则和取消方式以应用内页面、应用商店或第三方支付平台展示为准。</p>
-                <p>如您通过 Apple App Store、Google Play 或其他第三方平台购买服务，退款和取消订阅通常由相应平台按照其规则处理。</p>
+                <h2>6. 订阅与购买</h2>
+                <p>DrRock 可能提供订阅、一次性购买或其他增值服务。价格、权益、自动续订、取消和退款规则以应用内页面、应用商店或第三方支付平台展示为准。</p>
             </section>
 
             <section>
-                <h2>8. 隐私保护</h2>
-                <p>我们会按照《DrRock 隐私政策》处理您的个人信息。隐私政策是本协议的重要组成部分，请您一并阅读。</p>
+                <h2>7. 隐私保护</h2>
+                <p>我们会按照《DrRock 隐私政策》处理您的个人信息、图片和识别记录。隐私政策是本协议的重要组成部分。</p>
             </section>
 
             <section>
-                <h2>9. 知识产权</h2>
-                <p>除用户内容外，本应用及其软件、界面、设计、文字、图标、商标、算法、数据库和其他材料的知识产权归我们或相关权利人所有。</p>
-                <p>未经授权，您不得以任何方式使用、复制、传播、改编或商业利用上述内容。</p>
+                <h2>8. 知识产权</h2>
+                <p>除用户内容外，DrRock 的软件、界面、设计、文字、图片、图标、数据库、算法和其他材料的知识产权归我们或相关权利人所有。未经授权，您不得复制、传播、改编或商业使用。</p>
             </section>
 
             <section>
-                <h2>10. 服务变更与终止</h2>
-                <p>如您违反本协议或适用法律法规，我们有权暂停或终止向您提供全部或部分服务，并采取删除违法内容、限制账户、取消订阅权益等必要措施。</p>
-                <p>您可以随时停止使用本应用，并可根据应用提供的方式申请注销账户或删除相关数据。</p>
+                <h2>9. 服务终止</h2>
+                <p>如您违反本协议或法律法规，我们有权限制、暂停或终止向您提供服务，并采取删除违法内容、限制账户或取消相关权益等必要措施。</p>
+                <p>您可以随时停止使用本应用，并可按应用提供的方式删除本地记录或申请处理相关数据。</p>
             </section>
 
             <section>
-                <h2>11. 责任限制</h2>
-                <p>在法律允许的最大范围内，本应用按“现状”和“可用”基础提供。我们不保证服务不间断、无错误、完全安全，或输出内容绝对准确、完整、及时。</p>
-                <p>因您不当使用本应用、依据非专业内容作出医疗决定、第三方服务故障、网络原因、不可抗力或法律法规变化造成的损失，我们将在适用法律允许的范围内不承担责任。</p>
+                <h2>10. 责任限制</h2>
+                <p>在法律允许的最大范围内，DrRock 按“现状”和“可用”基础提供。我们不保证服务持续可用、无错误，或识别结果绝对准确。</p>
+                <p>因您不当使用识别结果、第三方服务故障、网络原因、设备问题、不可抗力或法律法规变化造成的损失，我们将在适用法律允许范围内不承担责任。</p>
             </section>
 
             <section>
-                <h2>12. 协议更新</h2>
-                <p>我们可能根据产品、法律或运营需要更新本协议。更新后的协议将在本页面公布，并更新“最后更新”日期。您继续使用本应用，即表示接受更新后的协议。</p>
+                <h2>11. 协议更新</h2>
+                <p>我们可能根据功能变化、运营需要或法律要求更新本协议。更新后会在本页面公布新的版本，并更新“最后更新”日期。您继续使用本应用，即表示接受更新后的协议。</p>
             </section>
 
             <section>
-                <h2>13. 适用法律与争议解决</h2>
-                <p>本协议的订立、履行、解释及争议解决，适用与本应用运营主体所在地相关的法律法规。因本协议或本应用产生的争议，双方应先友好协商解决；协商不成的，按适用法律规定处理。</p>
-            </section>
-
-            <section>
-                <h2>14. 联系我们</h2>
-                <p>如您对本协议或 DrRock 服务有任何问题、意见或投诉，请通过应用内反馈渠道或开发者公开联系方式与我们联系。</p>
+                <h2>12. 联系我们</h2>
+                <p>如您对本协议或 DrRock 服务有疑问，请通过应用内反馈渠道或开发者公开联系方式与我们联系。</p>
                 <p>应用名称：DrRock</p>
             </section>
         </main>
 
-        <footer>
-            <p>&copy; 2026 DrRock. All rights reserved.</p>
-        </footer>
+        <footer>&copy; 2026 DrRock. All rights reserved.</footer>
     </div>
 </body>
 </html>

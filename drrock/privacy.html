@@ -6,275 +6,229 @@
     <title>DrRock - 隐私政策</title>
     <style>
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, #0f766e 0%, #2563eb 55%, #38bdf8 100%);
-            min-height: 100vh;
-            padding: 20px;
-            color: #111827;
-            line-height: 1.6;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            color: #18342b;
+            background: #f5f8f4;
+            line-height: 1.75;
         }
 
-        .container {
-            max-width: 900px;
+        .page {
+            max-width: 860px;
             margin: 0 auto;
-            background: #fff;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(15, 23, 42, 0.18);
-            overflow: hidden;
+            padding: 48px 22px 56px;
         }
 
         header {
-            background: linear-gradient(135deg, #0f766e 0%, #2563eb 100%);
-            color: #fff;
-            padding: 50px 40px;
-            text-align: center;
+            padding: 38px 0 30px;
+            border-bottom: 1px solid rgba(18, 83, 65, 0.18);
+        }
+
+        .brand {
+            color: #125341;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 10px;
         }
 
         h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-            font-weight: 700;
+            margin: 0;
+            color: #0b3d2e;
+            font-size: 34px;
+            line-height: 1.2;
+            letter-spacing: 0;
         }
 
-        .last-updated {
+        .meta {
+            margin-top: 12px;
+            color: #5f746b;
             font-size: 14px;
-            opacity: 0.9;
-            font-weight: 300;
+        }
+
+        nav {
+            margin-top: 24px;
+        }
+
+        nav a {
+            color: #125341;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(18, 83, 65, 0.35);
         }
 
         main {
-            padding: 50px 40px;
+            padding-top: 34px;
         }
 
         section {
-            margin-bottom: 40px;
+            padding: 24px 0;
+            border-bottom: 1px solid rgba(18, 83, 65, 0.12);
+        }
+
+        section:last-child {
+            border-bottom: 0;
         }
 
         h2 {
-            font-size: 22px;
-            color: #0f766e;
-            margin-bottom: 15px;
-            margin-top: 30px;
-            border-bottom: 2px solid #2563eb;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            font-size: 16px;
-            color: #2563eb;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-weight: 600;
+            margin: 0 0 14px;
+            color: #0b3d2e;
+            font-size: 20px;
+            line-height: 1.35;
+            letter-spacing: 0;
         }
 
         p {
-            line-height: 1.8;
-            color: #4b5563;
-            margin-bottom: 15px;
+            margin: 0 0 14px;
+            color: #334d44;
             font-size: 15px;
         }
 
         ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
+            margin: 0 0 4px 20px;
+            padding: 0;
         }
 
         li {
-            margin-bottom: 10px;
-            color: #4b5563;
-            line-height: 1.7;
+            margin-bottom: 9px;
+            color: #334d44;
             font-size: 15px;
         }
 
         strong {
-            color: #0f766e;
-            font-weight: 600;
+            color: #0b3d2e;
+            font-weight: 700;
         }
 
-        .highlight-box {
-            background: linear-gradient(135deg, rgba(15, 118, 110, 0.06) 0%, rgba(37, 99, 235, 0.06) 100%);
-            border-left: 4px solid #2563eb;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-
-        .contact-info {
-            background: #f3f4f6;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-
-        a {
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        a:hover {
-            color: #0f766e;
-            text-decoration: underline;
+        .notice {
+            margin: 18px 0 4px;
+            padding: 16px 18px;
+            background: #e9f2ec;
+            border-left: 4px solid #125341;
+            color: #24453a;
         }
 
         footer {
-            background: #f3f4f6;
-            padding: 30px 40px;
-            text-align: center;
-            border-top: 1px solid #e5e7eb;
-            color: #6b7280;
-            font-size: 14px;
+            padding-top: 28px;
+            color: #6b7d75;
+            font-size: 13px;
         }
 
-        .nav {
-            text-align: right;
-            margin-bottom: 20px;
-        }
+        @media (max-width: 640px) {
+            .page {
+                padding: 28px 18px 42px;
+            }
 
-        .nav a {
-            margin-left: 15px;
-        }
-
-        @media (max-width: 768px) {
             header {
-                padding: 30px 20px;
+                padding-top: 22px;
             }
 
             h1 {
-                font-size: 24px;
+                font-size: 28px;
             }
 
             h2 {
                 font-size: 18px;
             }
-
-            main {
-                padding: 30px 20px;
-            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="page">
         <header>
-            <h1>DrRock 隐私政策</h1>
-            <p class="last-updated">最后更新：2026年4月24日</p>
+            <div class="brand">DrRock</div>
+            <h1>隐私政策</h1>
+            <div class="meta">最后更新：2026年4月24日</div>
+            <nav>
+                <a href="./terms.html">查看用户协议</a>
+            </nav>
         </header>
 
         <main>
-            <div class="nav">
-                <a href="./terms.html">用户协议</a>
-            </div>
-
             <section>
                 <h2>1. 简介</h2>
-                <p>欢迎使用 DrRock（以下简称“本应用”或“我们”）。我们重视您的个人信息和隐私保护。本隐私政策说明我们在您使用本应用时如何收集、使用、存储、共享和保护您的信息。</p>
-                <p>请您在使用本应用前仔细阅读并理解本政策。您使用本应用，即表示您已阅读并同意本政策的内容。</p>
+                <p>DrRock 是一款用于识别石头、矿物和岩石特征的应用。本隐私政策说明我们在您使用拍照识别、相册识别、记录保存等功能时如何处理相关信息。</p>
+                <p>您使用 DrRock，即表示您已阅读并理解本政策。</p>
             </section>
 
             <section>
-                <h2>2. 我们收集的信息</h2>
-                <h3>2.1 您主动提供的信息</h3>
+                <h2>2. 我们可能收集的信息</h2>
                 <ul>
-                    <li><strong>账户信息</strong>：如昵称、手机号码、电子邮箱、登录凭证等。</li>
-                    <li><strong>健康与医疗相关内容</strong>：您在本应用中输入、上传或保存的症状描述、健康记录、检查结果、病历摘要、用药记录、咨询问题、图片或文档等。</li>
-                    <li><strong>反馈与沟通信息</strong>：您通过客服、意见反馈或其他渠道向我们提供的问题描述、联系方式和沟通记录。</li>
-                    <li><strong>支付信息</strong>：如您购买订阅或增值服务，支付相关信息通常由第三方支付服务提供商处理，我们不会保存完整银行卡号等敏感支付凭证。</li>
-                </ul>
-
-                <h3>2.2 自动收集的信息</h3>
-                <ul>
-                    <li><strong>设备信息</strong>：设备型号、操作系统版本、应用版本、设备标识符、网络类型、语言和时区设置等。</li>
-                    <li><strong>日志信息</strong>：使用时间、访问页面、点击行为、崩溃日志、错误报告、IP 地址等。</li>
-                    <li><strong>功能使用数据</strong>：您使用 AI 辅助分析、记录管理、提醒、搜索等功能时产生的必要操作数据。</li>
-                </ul>
-
-                <h3>2.3 权限相关信息</h3>
-                <p>为实现特定功能，本应用可能在获得您授权后访问相机、相册、通知、文件或网络权限。您可以通过系统设置管理相关权限，但关闭权限可能影响部分功能的正常使用。</p>
-            </section>
-
-            <section>
-                <h2>3. 我们如何使用信息</h2>
-                <ul>
-                    <li>提供、维护和改进 DrRock 的核心功能与用户体验。</li>
-                    <li>生成、保存和展示您请求的健康记录、医学资料整理或 AI 辅助分析结果。</li>
-                    <li>处理账户登录、安全验证、订阅购买、客户支持和故障排查。</li>
-                    <li>进行匿名化或去标识化的数据分析，用于产品优化、性能监测和安全防护。</li>
-                    <li>在法律法规允许或要求的范围内，履行合规、安全、争议解决等义务。</li>
+                    <li><strong>图片信息</strong>：您拍摄或从相册选择的石头、矿物、岩石图片，用于完成识别、分析和结果展示。</li>
+                    <li><strong>识别记录</strong>：识别结果、收藏内容、备注、历史记录等您在应用内保存的信息。</li>
+                    <li><strong>设备与日志信息</strong>：设备型号、系统版本、应用版本、网络状态、错误日志和基础使用数据，用于保障应用运行和排查问题。</li>
+                    <li><strong>反馈信息</strong>：您主动提交的问题、建议、联系方式或相关截图。</li>
+                    <li><strong>支付信息</strong>：如应用提供订阅或增值服务，支付由应用商店或第三方支付平台处理，我们不会保存完整银行卡信息。</li>
                 </ul>
             </section>
 
             <section>
-                <h2>4. 医疗与敏感信息保护</h2>
-                <div class="highlight-box">
-                    <p><strong>重要提示：</strong>您在 DrRock 中输入的健康、医疗或病历相关内容可能属于敏感个人信息。我们仅会在实现本应用功能、获得您授权或法律法规允许的必要范围内处理此类信息。</p>
+                <h2>3. 权限使用</h2>
+                <ul>
+                    <li><strong>相机权限</strong>：用于拍摄石头或矿物图片并进行识别。</li>
+                    <li><strong>相册权限</strong>：用于选择已有图片进行识别或保存相关结果。</li>
+                    <li><strong>网络权限</strong>：用于提交识别请求、加载识别结果、同步订阅状态或获取必要服务。</li>
+                    <li><strong>通知权限</strong>：如提供提醒或结果通知功能，仅在您授权后使用。</li>
+                </ul>
+                <p>您可以在系统设置中管理上述权限。关闭权限可能导致拍照识别、相册识别或联网识别功能无法正常使用。</p>
+            </section>
+
+            <section>
+                <h2>4. 信息用途</h2>
+                <ul>
+                    <li>识别石头、矿物或岩石类别，并展示相关说明。</li>
+                    <li>保存、展示和管理您的识别历史、收藏和备注。</li>
+                    <li>维护应用稳定性、安全性和基础服务能力。</li>
+                    <li>处理反馈、故障排查、订阅验证和客户支持。</li>
+                    <li>在去标识化或匿名化后，用于改进识别效果和产品体验。</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>5. 图片与识别数据</h2>
+                <p>为完成识别，您提交的图片可能会在本地设备或服务器上进行处理。我们仅在实现识别、保存记录、改进服务或法律要求的必要范围内处理这些图片和结果。</p>
+                <div class="notice">
+                    请避免上传包含身份证件、人脸、住址、车牌或其他无关个人敏感信息的图片。
                 </div>
-                <p>请您谨慎上传或输入他人的个人信息、病历资料或可识别身份的敏感内容。如您代表他人使用本应用，应确保已获得合法授权。</p>
             </section>
 
             <section>
-                <h2>5. AI 辅助功能说明</h2>
-                <p>DrRock 可能提供基于人工智能的文本整理、健康信息分析、辅助问答或资料总结功能。为完成您的请求，您输入的相关内容可能会被发送至我们或第三方技术服务提供商的服务器进行处理。</p>
-                <p>AI 输出仅供健康管理、资料整理和一般信息参考，不构成医学诊断、治疗方案或专业医疗建议。您不应仅依据 AI 输出作出医疗决定。</p>
-            </section>
-
-            <section>
-                <h2>6. 信息共享与第三方服务</h2>
-                <p>我们不会出售您的个人信息。我们仅在以下情况下共享必要信息：</p>
-                <ul>
-                    <li>为实现登录、云存储、消息推送、支付、统计分析、崩溃诊断、AI 处理等功能，与服务提供商共享必要数据。</li>
-                    <li>在获得您明确同意后，向您指定的第三方共享相关信息。</li>
-                    <li>为遵守法律法规、法院命令、监管要求，或保护用户、我们及公众的合法权益。</li>
-                    <li>发生合并、分立、收购、资产转让等情形时，在符合法律要求的前提下转移相关信息。</li>
-                </ul>
-                <p>我们会要求第三方服务提供商按照本政策以及适用法律法规保护您的个人信息。</p>
+                <h2>6. 第三方服务</h2>
+                <p>DrRock 可能使用第三方服务提供图片识别、云存储、崩溃分析、统计分析、消息推送、支付或订阅验证能力。我们只会向第三方共享实现相关功能所需的必要信息。</p>
+                <p>我们不会出售您的个人信息。</p>
             </section>
 
             <section>
                 <h2>7. 信息存储与安全</h2>
-                <p>我们会在实现本政策所述目的所需的期限内保存您的个人信息，除非法律法规要求或允许更长的保存期限。</p>
-                <p>我们采取合理的技术和管理措施保护您的信息安全，包括访问控制、加密传输、安全审计和最小必要授权等。但请理解，任何互联网传输和电子存储方式都无法保证绝对安全。</p>
+                <p>我们会在实现本政策所述目的所需的期限内保存信息，并采取合理的技术和管理措施保护数据安全。由于互联网环境并非绝对安全，我们无法保证信息传输或存储的绝对安全。</p>
             </section>
 
             <section>
                 <h2>8. 您的权利</h2>
-                <p>在适用法律允许的范围内，您可以请求访问、更正、删除您的个人信息，撤回授权同意，注销账户，或获取个人信息副本。您也可以通过系统设置关闭部分权限或通知。</p>
-                <p>为保障账户安全，我们可能需要验证您的身份后再处理相关请求。</p>
+                <p>您可以在应用内删除识别记录、管理收藏和备注，也可以通过系统设置关闭相机、相册、通知等权限。在适用法律允许的范围内，您可以请求访问、更正或删除与您相关的个人信息。</p>
             </section>
 
             <section>
-                <h2>9. 未成年人保护</h2>
-                <p>本应用不面向未满 13 周岁的儿童提供服务。未成年人使用本应用应取得父母或其他监护人的同意和指导。如我们发现未经监护人同意收集了未成年人的个人信息，将依法及时删除或采取其他必要措施。</p>
+                <h2>9. 未成年人</h2>
+                <p>未成年人使用 DrRock 应取得监护人同意，并在监护人指导下使用。我们不会故意收集未成年人的个人敏感信息。</p>
             </section>
 
             <section>
-                <h2>10. 跨境处理</h2>
-                <p>如因服务器部署、第三方服务或技术支持需要，您的信息可能会在您所在地区以外被处理。我们会按照适用法律要求采取必要措施，确保您的个人信息获得合理保护。</p>
+                <h2>10. 政策更新</h2>
+                <p>我们可能根据功能变化或法律要求更新本政策。更新后会在本页面公布新的版本，并更新“最后更新”日期。</p>
             </section>
 
             <section>
-                <h2>11. 政策更新</h2>
-                <p>我们可能不时更新本隐私政策。更新后，我们会在本页面发布新的版本，并更新“最后更新”日期。重大变更将通过应用内提示或其他合理方式通知您。</p>
-            </section>
-
-            <section>
-                <h2>12. 联系我们</h2>
-                <div class="contact-info">
-                    <p>如您对本隐私政策或个人信息保护有任何问题、意见或请求，请通过应用内反馈渠道或开发者公开联系方式与我们联系。</p>
-                    <p>应用名称：DrRock</p>
-                </div>
+                <h2>11. 联系我们</h2>
+                <p>如您对本隐私政策或个人信息处理有疑问，请通过应用内反馈渠道或开发者公开联系方式与我们联系。</p>
+                <p>应用名称：DrRock</p>
             </section>
         </main>
 
-        <footer>
-            <p>&copy; 2026 DrRock. All rights reserved.</p>
-        </footer>
+        <footer>&copy; 2026 DrRock. All rights reserved.</footer>
     </div>
 </body>
 </html>
